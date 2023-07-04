@@ -1,0 +1,36 @@
+[
+    {
+        "nome": "Ana",
+        "sobrenome": "Lucia",
+        "endereco": "Av. Paulista",
+        "pais": "Brasil",
+        "cidade": "São Paulo",
+        "estado": "São Paulo",
+        "cep": "01000100",
+        "telefone": "11999999999",
+        "email": "teste@mail.com"
+    },
+    {
+        "nome": "Flavio",
+        "sobrenome": "Silva",
+        "endereco": "Av. Paulista",
+        "pais": "Brasil",
+        "cidade": "São Paulo",
+        "estado": "São Paulo",
+        "cep": "01510100",
+        "telefone": "11999999999",
+        "email": "teste@mail.com"
+    },
+    {
+        "nome": "Felipe",
+        "sobrenome": "Araujo",
+        "endereco": "Av. Paulista",
+        "pais": "Brasil",
+        "cidade": "São Paulo",
+        "estado": "São Paulo",
+        "cep": "01030100",
+        "telefone": "11999999999",
+        "email": "teste@mail.com"
+    }
+
+]

@@ -1,4 +1,5 @@
-/// <reference types="cypress" />
+/// <reference types='cypress'/>
+
 let dadosLogin
 
 context('Funcionalidade Login', () => {
@@ -10,10 +11,6 @@ context('Funcionalidade Login', () => {
 
     beforeEach(() => {
         cy.visit('minha-conta')
-    });
-
-    afterEach(() => {
-        cy.screenshot()
     });
 
     it('Login com sucesso usando Comando customizado', () => {
