@@ -1,10 +1,13 @@
 class CompraE2E {
 
     buscarProduto(nomeProduto){
-        //cy.get('.product-block').contains(nomeProuto).click()
-        //cy.get('.tbay-search form-control input-sm')
-        cy.get('.search > .tbay-search-form > .form-ajax-search > .form-group > .input-group > .tbay-search').click().type(nomeProduto)
-        cy.get('.search > .tbay-search-form > .form-ajax-search > .form-group > .input-group > .button-group > .button-search').click()
+        cy.get('.search > .tbay-search-form > .form-ajax-search > .form-group > .input-group > .tbay-search')
+            .click()
+            .type(nomeProduto)
+
+        cy.get('.search > .tbay-search-form > .form-ajax-search > .form-group > .input-group > .button-group > .button-search')
+            .click()
+
         cy.wait(500)   
     }
 
@@ -23,9 +26,7 @@ class CompraE2E {
     finalizarCompra(){
         cy.get('#payment_method_cod').click()
         cy.get('#terms').click()
-        cy.get('#place_order').click()
-
-        cy.get('.woocommerce-notice').should('contain','Obrigado. Seu pedido foi recebido.')
+        cy.get('#place_order').click()        
     }
 }
 

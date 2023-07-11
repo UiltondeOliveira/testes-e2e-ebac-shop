@@ -46,6 +46,8 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
                 dadosFaturamento[id].email
             )
         })
-        CompraE2E.finalizarCompra()       
+        CompraE2E.finalizarCompra()
+        
+        cy.get('.woocommerce-notice').should('contain','Obrigado. Seu pedido foi recebido.')
     });
 })
